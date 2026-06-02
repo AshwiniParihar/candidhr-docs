@@ -10,107 +10,89 @@
   "colors": {
     "primary": "#6366f1",
     "light": "#818cf8",
-    "dark": "#4338ca",
-    "anchors": {
-      "from": "#6366f1",
-      "to": "#4338ca"
+    "dark": "#4338ca"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Go to App",
+        "href": "https://app.candidhr.com"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Contact Support",
+      "href": "mailto:support@candidhr.com"
     }
   },
-  "topbarLinks": [
-    {
-      "name": "Go to App",
-      "url": "https://app.candidhr.com"
-    }
-  ],
-  "topbarCtaButton": {
-    "name": "Contact Support",
-    "url": "mailto:support@candidhr.com"
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Help Center",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "quick-start"
+            ]
+          },
+          {
+            "group": "Jobs",
+            "pages": [
+              "jobs/overview",
+              "jobs/create-a-job",
+              "jobs/build-a-workflow",
+              "jobs/launch-a-job"
+            ]
+          },
+          {
+            "group": "Applicants",
+            "pages": [
+              "applicants/overview",
+              "applicants/reviewing-applicants",
+              "applicants/bulk-actions",
+              "applicants/sharing-profiles"
+            ]
+          },
+          {
+            "group": "Assessments",
+            "pages": [
+              "assessments/overview",
+              "assessments/create-assessment",
+              "assessments/view-results"
+            ]
+          },
+          {
+            "group": "Video Interviews",
+            "pages": [
+              "video-interviews/overview",
+              "video-interviews/setup-questions",
+              "video-interviews/review-responses"
+            ]
+          },
+          {
+            "group": "Resume Screening",
+            "pages": [
+              "resume-screening/overview",
+              "resume-screening/scoring-and-preferences"
+            ]
+          },
+          {
+            "group": "Settings",
+            "pages": [
+              "settings/overview",
+              "settings/manage-team",
+              "settings/roles-and-permissions"
+            ]
+          }
+        ]
+      }
+    ]
   },
-  "tabs": [
-    {
-      "name": "Help Center",
-      "url": "/"
+  "footer": {
+    "socials": {
+      "website": "https://candidhr.com"
     }
-  ],
-  "anchors": [
-    {
-      "name": "Home",
-      "icon": "house",
-      "url": "introduction"
-    },
-    {
-      "name": "Jobs",
-      "icon": "briefcase",
-      "url": "jobs"
-    },
-    {
-      "name": "Applicants",
-      "icon": "user-check",
-      "url": "applicants"
-    }
-  ],
-  "navigation": [
-    {
-      "group": "Getting Started",
-      "pages": [
-        "introduction",
-        "quick-start"
-      ]
-    },
-    {
-      "group": "Jobs",
-      "pages": [
-        "jobs/overview",
-        "jobs/create-a-job",
-        "jobs/build-a-workflow",
-        "jobs/launch-a-job"
-      ]
-    },
-    {
-      "group": "Applicants",
-      "pages": [
-        "applicants/overview",
-        "applicants/reviewing-applicants",
-        "applicants/bulk-actions",
-        "applicants/sharing-profiles"
-      ]
-    },
-    {
-      "group": "Assessments",
-      "pages": [
-        "assessments/overview",
-        "assessments/create-assessment",
-        "assessments/view-results"
-      ]
-    },
-    {
-      "group": "Video Interviews",
-      "pages": [
-        "video-interviews/overview",
-        "video-interviews/setup-questions",
-        "video-interviews/review-responses"
-      ]
-    },
-    {
-      "group": "Resume Screening",
-      "pages": [
-        "resume-screening/overview",
-        "resume-screening/scoring-and-preferences"
-      ]
-    },
-    {
-      "group": "Settings",
-      "pages": [
-        "settings/overview",
-        "settings/manage-team",
-        "settings/roles-and-permissions"
-      ]
-    }
-  ],
-  "footerSocials": {
-    "website": "https://candidhr.com"
-  },
-  "search": {
-    "prompt": "Search help articles..."
   }
 }
