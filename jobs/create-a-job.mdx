@@ -1,0 +1,131 @@
+---
+title: "Create a Job Posting"
+description: "Learn how to create a new job posting on CandidHR, set screening preferences, and assign a workflow."
+---
+
+## Overview
+
+Creating a job in CandidHR takes you through a wizard with four steps:
+1. **Basic Info** — title, department, location, description
+2. **Preferences** — skills, experience, education, and other criteria
+3. **Questions** — optional custom questions for the application form
+4. **Workflow** — which screening stages to include
+
+---
+
+## Step-by-step
+
+<Steps>
+  <Step title="Navigate to Jobs">
+    Click **Jobs** in the left sidebar. You'll land on the jobs list page.
+  </Step>
+
+  <Step title="Click + New Job">
+    Click the **+ New Job** button in the top-right corner of the jobs list. This opens the job creation wizard.
+  </Step>
+
+  <Step title="Fill in Basic Info">
+    Complete the following fields:
+
+    | Field | Required | Notes |
+    |---|---|---|
+    | Job Title | Yes | e.g. "Senior Frontend Engineer" |
+    | Department | No | e.g. "Engineering" |
+    | Job Type | Yes | Full-time, Part-time, Contract, etc. |
+    | Location | Yes | City, or "Remote" |
+    | Salary Range | No | Optional. Shown on the public job page. |
+    | Job Description | Yes | Supports rich text — bullets, bold, headings. |
+
+    Click **Next** to proceed.
+  </Step>
+
+  <Step title="Set Screening Preferences">
+    Preferences define the criteria CandidHR uses to automatically score resumes.
+
+    **Skills**
+    - Add required skills and assign weights (e.g., React: 30%, Node.js: 20%)
+    - Skills with higher weight have more impact on the screening score
+
+    **Experience**
+    - Set a minimum and maximum years of experience range
+    - Candidates outside this range are flagged
+
+    **Education**
+    - Set a minimum qualification (e.g., Bachelor's degree)
+
+    **Other criteria**
+    - English proficiency level
+    - Notice period
+    - Current location preference
+
+    <Tip>
+      You can save preferences as a template and reuse them for similar roles.
+    </Tip>
+  </Step>
+
+  <Step title="Add Custom Questions (Optional)">
+    Add questions that candidates must answer during the application form.
+
+    - **Text** — free-form answer
+    - **Multiple choice** — single or multi-select options
+    - **Yes/No** — simple boolean question
+    - **File upload** — ask for a portfolio, cover letter, etc.
+
+    You can mark any question as **Required** or **Knockout** (a wrong answer disqualifies the candidate automatically).
+  </Step>
+
+  <Step title="Assign a Workflow">
+    A workflow defines the stages of your hiring pipeline for this job.
+
+    - Choose an **existing workflow** from the dropdown
+    - Or click **Create New Workflow** to build one from scratch
+
+    See [Build a Workflow](/jobs/build-a-workflow) for a full guide.
+
+    <Note>
+      You can change the workflow after creating the job, as long as no candidates have progressed past the first stage.
+    </Note>
+  </Step>
+
+  <Step title="Save as Draft or Launch">
+    At the end of the wizard:
+    - Click **Save as Draft** to continue editing later
+    - Click **Launch Job** to make it live immediately
+
+    A launched job generates a **public application link** you can share with candidates.
+  </Step>
+</Steps>
+
+---
+
+## Editing a job after creation
+
+You can edit any job detail at any time:
+
+1. Go to **Jobs** → click the job title
+2. Click the **Edit** button on the job overview page
+3. Make your changes and save
+
+<Warning>
+  Changing the job description or preferences after candidates have applied will not retroactively change their screening scores. Re-score from the Resume Screening tab if needed.
+</Warning>
+
+---
+
+## Duplicating a job
+
+To reuse a job setup for a similar role:
+
+1. Open the job from the Jobs list
+2. Click the **...** (more options) menu
+3. Select **Duplicate Job**
+
+This copies all settings (preferences, questions, workflow assignment) into a new draft job.
+
+---
+
+## Related articles
+
+- [Build a Workflow](/jobs/build-a-workflow)
+- [Launch a Job](/jobs/launch-a-job)
+- [Resume Screening — Scoring & Preferences](/resume-screening/scoring-and-preferences)

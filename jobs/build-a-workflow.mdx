@@ -1,0 +1,126 @@
+---
+title: "Build a Workflow"
+description: "Design a multi-stage hiring pipeline that automates candidate screening, assessments, and interview scheduling."
+---
+
+## What is a Workflow?
+
+A workflow is the sequence of stages a candidate moves through after applying for a job. Each stage can be automated (resume screening, assessment, video interview) or manual (HR review, final interview).
+
+**Example workflow:**
+```
+Application Received
+    ↓
+Resume Screening  (automated — scored by AI)
+    ↓
+Aptitude Assessment  (automated — test sent by email)
+    ↓
+Video Interview  (automated — candidate records answers)
+    ↓
+Final Interview  (manual — recruiter schedules call)
+    ↓
+Offer / Reject
+```
+
+---
+
+## Creating a new workflow
+
+<Steps>
+  <Step title="Go to Workflows">
+    Click **Interview Workflow** in the left sidebar. You'll see your existing workflow library.
+  </Step>
+
+  <Step title="Click + New Workflow">
+    Click **+ New Workflow** in the top right. Enter a name (e.g., "Engineering Hiring Pipeline") and an optional description.
+  </Step>
+
+  <Step title="Add stages">
+    The workflow builder opens with a canvas. Use the **+ Add Stage** button to add stages.
+
+    Available stage types:
+
+    | Stage Type | What it does |
+    |---|---|
+    | **Resume Screening** | Automatically scores resumes against your job preferences |
+    | **Assessment** | Sends a test link to the candidate |
+    | **Video Interview (AVI)** | Sends a video question link; candidate records answers |
+    | **Coding Interview** | Sends a coding problem for the candidate to solve |
+    | **Manual Review** | A stage for recruiters to manually evaluate and move candidates |
+    | **Approval** | Requires sign-off from a specific team member before the candidate advances |
+  </Step>
+
+  <Step title="Configure each stage">
+    Click a stage to configure it:
+
+    - **Name** the stage (visible to recruiters, not candidates)
+    - Set **pass/fail criteria** (e.g., resume score ≥ 70%)
+    - For assessment stages, select which test to assign
+    - For AVI stages, select which video question set to use
+    - Set **auto-advance** rules — automatically move candidates who pass to the next stage
+  </Step>
+
+  <Step title="Add conditional rules (optional)">
+    Use the **Rules Builder** to add logic between stages:
+    - If score ≥ 80% → advance to next stage
+    - If knockout question answered "No" → reject automatically
+    - If experience < 2 years → move to a different stage path
+
+    <Tip>
+      Rules let you run different screening paths for different candidate profiles within the same job.
+    </Tip>
+  </Step>
+
+  <Step title="Save the workflow">
+    Click **Save Workflow**. The workflow is now available to assign to any job.
+  </Step>
+</Steps>
+
+---
+
+## Assigning a workflow to a job
+
+1. Open the job from the **Jobs** list
+2. Go to the **Workflow** tab on the job overview page
+3. Click **Assign Workflow** and select from your library
+4. Click **Confirm**
+
+---
+
+## Editing a workflow
+
+<Warning>
+  Editing a workflow that is actively assigned to a job with candidates in progress will affect future stage transitions. Candidates already in a stage will complete it normally.
+</Warning>
+
+To edit:
+1. Go to **Interview Workflow** in the sidebar
+2. Click the workflow name
+3. Click **Edit**
+4. Make changes and **Save as new version** or **Update current version**
+
+Workflow versioning lets you keep a history of changes without losing previous configurations.
+
+---
+
+## Workflow templates
+
+CandidHR provides pre-built workflow templates for common hiring scenarios:
+
+- **Standard Hire** — Resume → Assessment → AVI → Final Interview
+- **Fast Track** — Resume → AVI → Offer
+- **Technical Hire** — Resume → Coding Test → Assessment → Technical Interview
+
+To use a template:
+1. Click **+ New Workflow**
+2. Select **Start from Template**
+3. Choose a template and customise as needed
+
+---
+
+## Related articles
+
+- [Create a Job](/jobs/create-a-job)
+- [Launch a Job](/jobs/launch-a-job)
+- [Set Up Video Interview Questions](/video-interviews/setup-questions)
+- [Create an Assessment](/assessments/create-assessment)

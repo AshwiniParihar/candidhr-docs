@@ -1,0 +1,54 @@
+---
+title: "Jobs Overview"
+description: "Understand how jobs work in CandidHR and what you can configure per posting."
+---
+
+## What is a Job in CandidHR?
+
+A **Job** is the central object in CandidHR. It represents an open position and contains:
+
+- Job details (title, description, location, department)
+- Screening preferences (skills, experience, education)
+- A **Workflow** — the stages candidates go through (resume screening → assessment → video interview → interview)
+- Applicant data — all candidates who applied to this specific role
+
+---
+
+## Job States
+
+| State | Meaning |
+|---|---|
+| **Draft** | Created but not yet live. Candidates cannot apply. |
+| **Active** | Live. The public link is accessible and accepts applications. |
+| **Closed** | No longer accepting applications. Existing applicants remain visible. |
+| **Archived** | Hidden from the default jobs list. Data is preserved. |
+
+---
+
+## Jobs List View
+
+The Jobs page (`/app/user/jobs/v2/`) shows all your jobs in a table with:
+
+- Job title and department
+- Number of applicants
+- Status badge
+- Workflow assigned
+- Date created and launched
+
+You can filter by status, sort by date or applicant count, and search by title.
+
+---
+
+## Articles in this section
+
+<CardGroup cols={2}>
+  <Card title="Create a Job" icon="plus" href="/jobs/create-a-job">
+    Step-by-step guide to creating a new job posting.
+  </Card>
+  <Card title="Build a Workflow" icon="timeline" href="/jobs/build-a-workflow">
+    Design the stages candidates move through for this role.
+  </Card>
+  <Card title="Launch a Job" icon="rocket" href="/jobs/launch-a-job">
+    Make your job live and get the shareable application link.
+  </Card>
+</CardGroup>
