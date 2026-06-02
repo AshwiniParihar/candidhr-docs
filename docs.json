@@ -3,8 +3,8 @@
   "theme": "mint",
   "name": "CandidHR",
   "logo": {
-    "light": "/images/logo/candidhr-logo.png",
-    "dark": "/images/logo/candidhr-logo.png"
+    "light": "/images/logo/logo-light.png",
+    "dark": "/images/logo/logo-dark.png"
   },
   "favicon": "/images/logo/favicon.ico",
   "colors": {
