@@ -1,15 +1,16 @@
 ---
 title: "Create a Job Posting"
-description: "Learn how to create a new job posting on CandidHR, set screening preferences, and assign a workflow."
+description: "Learn how to create a new job posting on CandidHR, configure your application form, and invite your team."
 ---
 
 ## Overview
 
-Creating a job in CandidHR takes you through a wizard with four steps:
-1. **Basic Info** — title, department, location, description
-2. **Preferences** — skills, experience, education, and other criteria
-3. **Questions** — optional custom questions for the application form
-4. **Workflow** — which screening stages to include
+Creating a job in CandidHR takes you through a 3-step wizard:
+1. **Job Details** — title, type, location, description, skills, salary, and screening settings
+2. **Application Form** — configure what candidates fill out and set scoring criteria
+3. **Team Members** — optionally invite colleagues to collaborate on this job
+
+Assigning a workflow to the job is **entirely optional** and can be done at any time after the job is created — it is not part of the creation wizard.
 
 ---
 
@@ -18,83 +19,105 @@ Creating a job in CandidHR takes you through a wizard with four steps:
 <Steps>
   <Step title="Navigate to Jobs">
     Click **Jobs** in the left sidebar. You'll land on the jobs list page.
+
+    <Frame>
+      <img src="/images/jobs/Jobspage.png" alt="Jobs list page with + New Job button" />
+    </Frame>
   </Step>
 
   <Step title="Click + New Job">
-    Click the **+ New Job** button in the top-right corner of the jobs list. This opens the job creation wizard.
+    Click the **+ New Job** button in the top-right corner. This opens the job creation wizard.
   </Step>
 
-  <Step title="Fill in Basic Info">
-    Complete the following fields:
+  <Step title="Fill in Job Details">
+    Complete the job information fields:
+
+    <Frame>
+      <img src="/images/jobs/createjobsection.png" alt="Create job form" />
+    </Frame>
 
     | Field | Required | Notes |
     |---|---|---|
     | Job Title | Yes | e.g. "Senior Frontend Engineer" |
-    | Department | No | e.g. "Engineering" |
-    | Job Type | Yes | Full-time, Part-time, Contract, etc. |
-    | Location | Yes | City, or "Remote" |
-    | Salary Range | No | Optional. Shown on the public job page. |
-    | Job Description | Yes | Supports rich text — bullets, bold, headings. |
+    | Employment Type | Yes | Full-time, Part-time, Contract, Internship |
+    | Location | Yes | City, state, or "Remote" |
+    | Job Description | Yes | Supports rich text — bullets, bold, headings. Use AI Assist to generate or rewrite. |
+    | Skills | No | Add required skills and assign resume screening weights |
+    | Experience Range | No | Min/max years of experience for resume scoring |
+    | Education Requirements | No | Minimum qualification level |
+    | Salary Range | No | Shown on the public job page |
+    | Close Date | No | When the job stops accepting applications |
+
+    <Tip>
+      Use **AI Assist** to auto-generate a job description or extract skills from an existing description.
+    </Tip>
 
     Click **Next** to proceed.
   </Step>
 
-  <Step title="Set Screening Preferences">
-    Preferences define the criteria CandidHR uses to automatically score resumes.
+  <Step title="Configure the Application Form">
+    Set up what candidates see and submit when they apply.
 
-    **Skills**
-    - Add required skills and assign weights (e.g., React: 30%, Node.js: 20%)
-    - Skills with higher weight have more impact on the screening score
+    **Application preferences** — toggle which fields to show candidates:
+    - Work experience, notice period, current CTC
+    - Profile picture, intro video
+    - GitHub, LinkedIn, personal website
 
-    **Experience**
-    - Set a minimum and maximum years of experience range
-    - Candidates outside this range are flagged
+    **Filter criteria** — define hard filters to automatically flag or exclude candidates based on specific criteria.
 
-    **Education**
-    - Set a minimum qualification (e.g., Bachelor's degree)
-
-    **Other criteria**
-    - English proficiency level
-    - Notice period
-    - Current location preference
-
-    <Tip>
-      You can save preferences as a template and reuse them for similar roles.
-    </Tip>
-  </Step>
-
-  <Step title="Add Custom Questions (Optional)">
-    Add questions that candidates must answer during the application form.
-
+    **Screening questions** — add custom questions candidates must answer:
     - **Text** — free-form answer
-    - **Multiple choice** — single or multi-select options
-    - **Yes/No** — simple boolean question
-    - **File upload** — ask for a portfolio, cover letter, etc.
+    - **Multiple choice** — single or multi-select
+    - **Yes/No** — boolean question
+    - **File upload** — e.g. portfolio or cover letter
 
     You can mark any question as **Required** or **Knockout** (a wrong answer disqualifies the candidate automatically).
+
+    <Tip>
+      All application form settings are optional. You can skip this step and configure the form later by editing the job.
+    </Tip>
+
+    Click **Next** to proceed.
   </Step>
 
-  <Step title="Assign a Workflow">
-    A workflow defines the stages of your hiring pipeline for this job.
+  <Step title="Invite Team Members (Optional)">
+    Add colleagues who should have access to view and manage this job.
 
-    - Choose an **existing workflow** from the dropdown
-    - Or click **Create New Workflow** to build one from scratch
-
-    See [Build a Workflow](/jobs/build-a-workflow) for a full guide.
+    - Search for team members by name
+    - Selected members will appear in the list below the search
+    - Remove any member by clicking the trash icon next to their name
 
     <Note>
-      You can change the workflow after creating the job, as long as no candidates have progressed past the first stage.
+      This step is optional — you can skip it and add team members later from the job overview page.
     </Note>
-  </Step>
 
-  <Step title="Save as Draft or Launch">
-    At the end of the wizard:
-    - Click **Save as Draft** to continue editing later
-    - Click **Launch Job** to make it live immediately
+    Click **Complete** to finish creating the job.
 
-    A launched job generates a **public application link** you can share with candidates.
+    <Frame>
+      <img src="/images/jobs/jobcreatedsucessfully.png" alt="Job created successfully screen" />
+    </Frame>
   </Step>
 </Steps>
+
+---
+
+## Assigning a workflow (optional)
+
+A workflow defines the screening stages candidates move through for this job (e.g. Resume Review → Phone Screen → Interview). Assigning a workflow is **not required** to create a job — you can do it at any time.
+
+To assign a workflow after creating the job:
+
+1. Open the job from the Jobs list
+2. Go to the **Workflow** tab on the job detail page
+3. Click **Assign Workflow**
+4. Select an existing workflow from the dropdown, or create a new one
+5. Choose how candidates enter the workflow — via the application form, via email invite, or both
+
+<Note>
+  You can change or reassign the workflow at any time, as long as no candidates have progressed past the first stage.
+</Note>
+
+See [Build a Workflow](/jobs/build-a-workflow) for a full guide on creating workflows.
 
 ---
 
