@@ -1,0 +1,70 @@
+---
+title: "Workflow Visualizer"
+description: "View the live state of a workflow and track where every candidate currently stands."
+---
+
+## Overview
+
+The Workflow Visualizer is a read-only view of a workflow assigned to a job. It shows the full pipeline structure and where candidates are at any given moment — without letting you accidentally edit the live workflow.
+
+<Frame>
+  <img src="/images/workflows/image76.png" alt="Workflow visualizer showing candidate stages" />
+</Frame>
+
+---
+
+## Opening the Visualizer
+
+1. Go to **Jobs** and open the relevant job
+2. Click the **Workflow** tab
+3. Click the **Visualize** button in the workflow header card
+
+---
+
+## What the Visualizer Shows
+
+The visualizer renders the workflow as a node graph — the same visual layout as the editor, but in a read-only state.
+
+| Element | Description |
+|---|---|
+| **Stage nodes** | Each pipeline stage (Resume Screening, Assessment, Video Interview, etc.) |
+| **Connections** | Arrows showing the flow from one stage to the next |
+| **Condition branches** | True and False paths from condition nodes |
+| **Candidate counts** | Number of candidates currently at each stage |
+
+---
+
+## Candidate Status in the Workflow
+
+The **Workflow** tab (below the Visualize button) shows a table of all applicants currently in the workflow for that job.
+
+| Column | Description |
+|---|---|
+| **Candidate** | Name, avatar, and workflow version assigned |
+| **Email** | Candidate's email address |
+| **Application Status** | Current status (Applied, Screening, Assessment, etc.) |
+| **Applied On** | Date and time of application |
+| **Current Stage** | The stage the candidate is currently at |
+
+### Workflow Status Indicators
+
+| Status | Meaning |
+|---|---|
+| **In Progress** | Candidate is actively moving through the workflow |
+| **Completed** | Candidate has finished the workflow |
+| **Started** | Candidate has begun their first stage |
+
+---
+
+## Viewing Applicant Details
+
+Click any candidate row in the workflow table to open their full applicant profile, where you can review their stage results and take action.
+
+---
+
+## Related Articles
+
+- [Workflows Overview](/jobs/workflows-overview)
+- [Build a Workflow](/jobs/build-a-workflow)
+- [Assign a Workflow](/jobs/assign-a-workflow)
+- [Versions and Logs](/jobs/workflow-versions)

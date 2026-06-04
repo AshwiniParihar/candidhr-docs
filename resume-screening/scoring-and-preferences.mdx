@@ -1,6 +1,111 @@
 ---
 title: "Scoring & Preferences"
-description: "Configure the skills, experience, and education criteria used to score resumes."
+description: "Configure resume scoring weights and application form preferences for each job posting."
 ---
 
-<Note>This article is coming soon.</Note>
+## Resume Scoring Weights
+
+When resumes are received, the system automatically assigns a score based on predefined evaluation parameters and the weightage you configure for each criterion. This section explains how to customise scoring and application form preferences for each job.
+
+<Frame>
+  <img src="/images/jobs/image22.png" alt="Resume scoring weights configuration" />
+</Frame>
+
+---
+
+## Configuring Scoring Weights
+
+You can customise the weightage assigned to each evaluation criterion according to your hiring requirements.
+
+| Criterion | Description |
+|---|---|
+| **Skills** | Match between candidate skills and required job skills |
+| **Experience** | Relevant work experience in years |
+| **Projects** | Portfolio and project work relevance |
+| **Education** | Qualification level and field of study |
+| **Certifications** | Industry certifications and credentials |
+
+**Examples:**
+- For **technical roles** → prioritise Skills and Projects
+- For **leadership roles** → prioritise Experience and Certifications
+
+<Warning>
+  These weights are critical to the AI evaluation process. Configure them carefully for each job posting. Click **Save and Continue** to proceed.
+</Warning>
+
+**Best Practices**
+- Assign higher weightage to the most critical criteria for the role
+- Avoid assigning extremely high weightage to a single criterion unless absolutely necessary
+- Ensure required skills listed in the job description align with the resume scoring criteria
+
+---
+
+## Professional Information Preferences
+
+Configure which additional fields candidates are required to fill in during their application. Each field can be set as **Off**, **Optional**, or **Mandatory**.
+
+<Frame>
+  <img src="/images/jobs/Application-form-preferances.png" alt="Application form preferences settings" />
+</Frame>
+
+| Field | Description |
+|---|---|
+| **Relevant Experience** | Candidate's relevant work experience in months |
+| **Notice Period** | Candidate's current notice period |
+| **Expected Salary** | Expected annual compensation |
+| **Current Salary** | Current annual compensation |
+| **Profile Picture** | Request a profile photo from applicants |
+| **Introduction Video** | 1-minute self-introduction video to assess personality and communication |
+| **GitHub Profile** | GitHub URL — especially useful for technical roles |
+| **LinkedIn Profile** | Candidate's LinkedIn profile URL |
+| **Personal Website** | Portfolio or personal website link |
+
+---
+
+## Filter Criteria
+
+Filter criteria are screening questions used to evaluate whether candidates meet specific job requirements — such as willingness to relocate, availability to join within a timeframe, or possession of required certifications.
+
+<Frame>
+  <img src="/images/jobs/image25.png" alt="Filter criteria configuration" />
+</Frame>
+
+Candidates respond to these questions during the application process. Based on their response, the system displays a status indicator on the candidate profile.
+
+### Adding a Filter Criterion
+
+<Steps>
+  <Step title="Enter the question">
+    Type a screening question (e.g. "Do you have a valid work permit?").
+  </Step>
+  <Step title="Select response type">
+    | Type | Description |
+    |---|---|
+    | Single Select | Candidate chooses one option from a dropdown |
+    | Radio Buttons | Visible options where only one can be selected |
+    | Multi Select | Candidate selects multiple options |
+    | Yes / No | Simple binary choice |
+  </Step>
+  <Step title="Add options">
+    Click **Add Option** to define available answer choices.
+  </Step>
+  <Step title="Set expected answer">
+    In the **Expected Answer** section, select the preferred response.
+  </Step>
+  <Step title="Save">
+    Click **Add Criteria** to save the configuration.
+  </Step>
+</Steps>
+
+**Best Practices**
+- Use filter criteria only for essential eligibility requirements — excessive conditions may unintentionally reject qualified candidates
+- Keep screening questions simple, objective, and easy to understand
+- Avoid discriminatory or non-job-related questions
+- Regularly review filter criteria to ensure they align with current hiring requirements
+
+---
+
+## Related Articles
+
+- [Resume Screening Overview](/resume-screening/overview)
+- [Create a Job](/jobs/create-a-job)

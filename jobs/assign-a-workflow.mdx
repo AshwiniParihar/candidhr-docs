@@ -1,0 +1,93 @@
+---
+title: "Assign a Workflow"
+description: "Attach a workflow to a job and configure how candidates enter the pipeline."
+---
+
+## Overview
+
+Assigning a workflow to a job activates the automated hiring pipeline for that job. All new applicants enter the workflow automatically based on the invite options you configure.
+
+<Frame>
+  <img src="/images/workflows/image75.png" alt="Assign workflow modal" />
+</Frame>
+
+---
+
+## How to Assign a Workflow
+
+<Steps>
+  <Step title="Open the Job">
+    Go to **Jobs** from the left sidebar and click the job you want to configure.
+  </Step>
+  <Step title="Go to the Workflow tab">
+    Inside the job details, click the **Workflow** tab.
+  </Step>
+  <Step title="Click Assign Workflow">
+    Click the **Assign Workflow** button. The assignment modal opens.
+  </Step>
+  <Step title="Select a workflow">
+    Search for and select the workflow from the dropdown. You can type to filter by name.
+  </Step>
+  <Step title="Choose invite options">
+    Select at least one invite option (see below).
+  </Step>
+  <Step title="Confirm">
+    Click **Assign Workflow** to activate. Candidates will now enter the workflow automatically.
+  </Step>
+</Steps>
+
+---
+
+## Invite Options
+
+| Option | Description |
+|---|---|
+| **Include from job application form** | Candidates who apply through the job's application form are automatically added to the workflow |
+| **Invite via email** | Manually enter email addresses to invite specific candidates directly |
+
+You can enable both options at the same time.
+
+### Inviting via Email
+
+When **Invite via email** is selected:
+
+1. Type an email address into the input field
+2. Press **Enter** or **Space** to add it as a chip
+3. Repeat for additional addresses
+4. Click the **X** on any chip to remove it
+
+<Note>
+  To see candidates who were previously invited by email, toggle **View existing emails** in the modal.
+</Note>
+
+---
+
+## Configuration Warnings
+
+If the selected workflow has stages that are not fully configured, an amber warning banner appears showing which stage needs attention.
+
+You must resolve all configuration issues before the **Assign Workflow** button becomes active.
+
+---
+
+## Changing or Removing a Workflow
+
+To replace or remove a workflow from a job, go to the **Workflow** tab inside the job and click **Configure Workflow**. This reopens the assignment modal where you can select a different workflow.
+
+<Warning>
+  Changing a workflow on a job only affects new candidates. Candidates already in the previous workflow continue on their existing version.
+</Warning>
+
+---
+
+## Permissions
+
+The **Assign Workflow** action requires the `ASSIGN_WORKFLOW` permission. Contact your Admin if you do not see this option.
+
+---
+
+## Related Articles
+
+- [Workflows Overview](/jobs/workflows-overview)
+- [Build a Workflow](/jobs/build-a-workflow)
+- [Workflow Visualizer](/jobs/workflow-visualizer)

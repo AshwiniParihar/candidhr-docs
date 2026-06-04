@@ -1,6 +1,185 @@
 ---
 title: "Reviewing Applicants"
-description: "How to view, filter, and evaluate candidates from the applicants table."
+description: "Navigate the applicant profile, review each pipeline stage, and take action on candidates."
 ---
 
-<Note>This article is coming soon.</Note>
+## Opening an Applicant Profile
+
+From the Applicants list, click any candidate's **name** to open their full profile. The profile opens at the **Overview** tab by default.
+
+---
+
+## Profile Header
+
+The header is always visible and gives you quick access to the most important controls:
+
+| Element | Description |
+|---|---|
+| **Avatar + Name** | Candidate identity and the date they applied |
+| **Job** | The job this application is linked to |
+| **Status Dropdown** | Change the application status at any time |
+| **Workflow Badge** | Indicates if the applicant is inside an active workflow |
+| **Comments** | Opens the comments drawer for internal notes |
+| **More Menu (...)** | View Resume, Export to PDF, GitHub link, LinkedIn link |
+
+### Changing Application Status
+
+<Steps>
+  <Step title="Click the Status dropdown">
+    Click the status pill in the profile header.
+  </Step>
+  <Step title="Select a new status">
+    Choose from 14 available statuses (e.g. Shortlisted, Rejected, Hired).
+  </Step>
+  <Step title="Add a reason (optional)">
+    Select a pre-configured reason template to document why the status changed.
+  </Step>
+  <Step title="Notify the candidate (optional)">
+    Toggle Email candidate and customise the subject and message. Supported tokens: candidate name, job title, application status, company name.
+  </Step>
+  <Step title="Confirm">
+    Click Update status to apply the change.
+  </Step>
+</Steps>
+
+<Tip>
+  Use email templates to send consistent, professional candidate communications. Templates support tokens like the candidate name, job title, and company name.
+</Tip>
+
+---
+
+## Stages Navigation
+
+Below the header is the **Stages Nav** - a horizontal bar showing every pipeline stage for this applicant.
+
+Each stage pill displays:
+- Stage name
+- Current status: Pending / Approved / Not Approved
+- A dropdown to **Approve** or **Not Approve** the stage
+
+<Note>
+  Stage approval is separate from the overall application status. Approving a stage means the candidate passed that step - it does not automatically change the application status.
+</Note>
+
+---
+
+## Overview Tab
+
+The Overview tab shows everything the candidate submitted in their application:
+
+| Section | Content |
+|---|---|
+| **Contact Info** | LinkedIn, GitHub, website, phone (copyable), email (opens mail client) |
+| **Introduction Video** | Self-recorded video intro (if requested in the job's application form) |
+| **Resume** | View in a PDF modal or download directly |
+| **Personal Info** | Current CTC, Expected CTC, calculated hike percentage (values can be masked/unmasked) |
+| **Criteria Responses** | Answers to filter criteria questions configured on the job |
+| **Screening Responses** | Answers to screening questions - text or audio responses |
+
+---
+
+## Resume Screening Stage
+
+Shows the AI-generated resume analysis scored against the job's configured criteria.
+
+### Report Status
+
+| Status | Meaning |
+|---|---|
+| **Not Started** | Resume has not been processed yet |
+| **Processing / Evaluating / Scoring** | Report is being generated |
+| **Completed** | Full report is available |
+| **Failed** | Processing error - click Recompute to retry |
+
+### Score Breakdown
+
+| Component | Description |
+|---|---|
+| **Overall Score** | Composite score out of 10 |
+| **Skills** | Match between candidate skills and job requirements |
+| **Experience** | Relevance and years of work experience |
+| **Projects** | Portfolio and project relevance |
+| **Education** | Qualification level and field of study |
+| **Certifications** | Industry credentials |
+
+Each component shows its configured weight, the score achieved, and can be expanded to view individual item matches (High / Medium / Low relevance).
+
+### AI Summary
+
+An AI-generated summary of the candidate's key qualifications, experience highlights, and overall fit for the role.
+
+### Detailed Resume
+
+Expandable panels for Work Experience, Projects, Education, and Certifications - each with relevance tiers.
+
+
+
+## Assessment Stage
+
+Shows the candidate's test performance if they were assigned an assessment.
+
+### Assessment Timeline
+
+| Milestone | Description |
+|---|---|
+| **Invited On** | When the assessment link was sent |
+| **Link Opened** | When the candidate first opened the link |
+| **Started** | When the candidate began the test |
+| **Completed** | When the test was submitted |
+
+### Report
+
+- Overall score with pass/fail status
+- Per-section scores for multi-test assessments
+- Question-by-question breakdown with answers and time spent per question
+- Coding results - test case pass/fail and submitted code
+- Eye-gaze snapshot gallery (if proctoring was enabled during the assessment)
+
+
+
+## Automated Video Interview Stage
+
+Shows the candidate's recorded video responses and AI-scored performance across 6 dimensions.
+
+### AI Scoring Dimensions
+
+| Dimension | What It Measures |
+|---|---|
+| **Articulation** | Clarity and fluency of speech |
+| **Communication** | Ability to express ideas effectively |
+| **Language** | Grammar, vocabulary, and language quality |
+| **Logical Thinking** | Coherence and structure of answers |
+| **Response Quality** | Depth and relevance of answers |
+| **Technical** | Domain knowledge demonstrated |
+
+Scores are 0-10 per dimension. A radar chart provides a visual overview of all six dimensions at once.
+
+### Video Responses
+
+Each interview question is listed with the candidate's recorded response. Watch videos directly in the platform.
+
+<Note>
+  AI scores are intended to support - not replace - recruiter judgement. Always watch the full video responses before making a decision.
+</Note>
+
+
+
+---
+
+## Comments
+
+The **Comments** drawer is accessible from the header at any time. Notes are linked to the specific stage context you are currently viewing. All team members with access to the profile can view and add comments.
+
+---
+
+## Exporting to PDF
+
+From the **More (...)** menu, click **Export to PDF** to generate a full profile report including personal information, resume, all stage results, AI summaries, and job details.
+
+---
+
+## Related Articles
+
+- [Applicants Overview](/applicants/overview)
+- [Bulk Actions](/applicants/bulk-actions)
+- [Sharing Candidate Profiles](/applicants/sharing-profiles)

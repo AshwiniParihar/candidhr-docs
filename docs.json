@@ -38,12 +38,27 @@
             ]
           },
           {
+            "group": "Dashboard",
+            "pages": [
+              "dashboard/overview"
+            ]
+          },
+          {
             "group": "Jobs",
             "pages": [
               "jobs/overview",
               "jobs/create-a-job",
-              "jobs/build-a-workflow",
               "jobs/launch-a-job"
+            ]
+          },
+          {
+            "group": "Workflows",
+            "pages": [
+              "jobs/workflows-overview",
+              "jobs/build-a-workflow",
+              "jobs/assign-a-workflow",
+              "jobs/workflow-visualizer",
+              "jobs/workflow-versions"
             ]
           },
           {
@@ -53,6 +68,13 @@
               "applicants/reviewing-applicants",
               "applicants/bulk-actions",
               "applicants/sharing-profiles"
+            ]
+          },
+          {
+            "group": "Resume Screening",
+            "pages": [
+              "resume-screening/overview",
+              "resume-screening/scoring-and-preferences"
             ]
           },
           {
@@ -69,13 +91,6 @@
               "video-interviews/overview",
               "video-interviews/setup-questions",
               "video-interviews/review-responses"
-            ]
-          },
-          {
-            "group": "Resume Screening",
-            "pages": [
-              "resume-screening/overview",
-              "resume-screening/scoring-and-preferences"
             ]
           },
           {

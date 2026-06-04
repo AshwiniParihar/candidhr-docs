@@ -1,6 +1,243 @@
 ---
 title: "Create an Assessment"
-description: "Build aptitude, coding, or custom tests and add them to your workflow."
+description: "Build aptitude or coding tests and group them into assessments for your hiring pipeline."
 ---
 
-<Note>This article is coming soon.</Note>
+## Overview
+
+The Assessment Module has two distinct creation flows:
+
+- **Create Test** - Build a set of questions (aptitude or coding) and save it to the Test Library
+- **Create Assessment** - Group multiple tests into a single assessment session with proctoring, instructions, and scoring rules
+
+Start by creating your tests first, then combine them into an assessment.
+
+---
+
+## Step 1: Create a Test
+
+Navigate to **Assessments > Create Test** from the Quick Actions panel.
+
+### Basic Information
+
+<Frame>
+  <img src="/images/assessments/image33.png" alt="Create test basic information form" />
+</Frame>
+
+| Field | Required | Description |
+|---|---|---|
+| Test Name | Yes | Clear, descriptive name (e.g. SQL Fundamentals) |
+| Description | No | Short summary of what the test evaluates |
+| Instructions | No | Guidance candidates see before starting |
+
+---
+
+## Aptitude Test
+
+### Adding Questions
+
+<Frame>
+  <img src="/images/assessments/image34.png" alt="Aptitude test question creation methods" />
+</Frame>
+
+| Method | Description |
+|---|---|
+| **Manually Add Questions** | Add question, choose type (Single/Multiple Choice, Text), set difficulty, points, and time limit |
+| **Upload Excel** | Bulk upload via Excel template (download using the Download Template button) |
+| **Generate with AI** | Specify topic, number, difficulty, and question types, review the preview and click Add to Test |
+
+<Frame>
+  <img src="/images/assessments/image39.png" alt="AI question generation for aptitude tests" />
+</Frame>
+
+<Tip>
+  After generating questions with AI, save all generated questions. If you need more, click Generate again to create the next set.
+</Tip>
+
+**Best Practices**
+- Ensure all questions are clear, grammatically correct, and free from ambiguity
+- Maintain a balanced mix of easy, medium, and difficult questions
+- Validate correct answers and scoring configurations before publishing
+
+### Publishing the Test
+
+Once all questions are added, click **Publish**. Then click **Close** - the test will appear in the Test Library.
+
+---
+
+## Coding Test
+
+<Frame>
+  <img src="/images/assessments/image41.png" alt="Coding test question creation" />
+</Frame>
+
+### Manually Add a Problem
+
+Click **+ Add** or **+ New Problem** to create a programming question.
+
+| Field | Description |
+|---|---|
+| Problem Title and Difficulty | Easy, Medium, or Hard |
+| Problem Statement | Rich-text description (AI generation available) |
+| Supported Languages | Programming languages available to candidates |
+| Test Cases | Automated evaluation cases (not visible to candidates) |
+| Starter Code / Reference Solution | Help candidates begin and provide internal validation |
+
+### Generate with AI
+
+<Frame>
+  <img src="/images/assessments/image40.png" alt="AI generation for coding problems" />
+</Frame>
+
+| Field | Description |
+|---|---|
+| Problem Title and Difficulty | Easy, Medium, or Hard |
+| AI Prompt | Describe coding requirements for generating accurate coding challenges |
+| Supported Languages | Programming languages available to candidates |
+| Test Cases | Automated evaluation cases |
+
+Once complete: click **Save**, then **Publish**, then **Close**. The test appears in the Test Library.
+
+**Best Practices**
+- Use clear and detailed problem statements so candidates understand the requirements
+- Provide sample inputs and outputs to illustrate expected behaviour
+- Include difficulty levels from basic to advanced
+- Configure supported languages according to the job requirements
+
+---
+
+## Step 2: Create an Assessment
+
+Navigate to **Assessments > Create Assessment** from the Quick Actions panel.
+
+### Basic Info
+
+<Frame>
+  <img src="/images/assessments/image47.png" alt="Assessment basic info form" />
+</Frame>
+
+| Field | Description |
+|---|---|
+| Assessment Title | Unique, descriptive title |
+| Description | Brief explanation of what the assessment covers |
+| Default Duration | Total duration in minutes |
+| Passing Score (%) | Minimum percentage required to pass |
+| Skills (Tags) | Relevant skill tags for organisation and searchability |
+
+---
+
+### Sections - Adding Tests
+
+<Frame>
+  <img src="/images/assessments/image48.png" alt="Assessment sections with multiple tests" />
+</Frame>
+
+Click **+ Add Section**, select a published test from the dropdown, then configure:
+
+| Setting | Description |
+|---|---|
+| **Questions to Show** | How many questions candidates will see (e.g. show 5 out of 10) |
+| **Required Questions** | Minimum number of questions candidates must answer |
+| **Shuffle Questions** | Randomises question order for each candidate |
+
+#### Adding Multiple Tests
+
+You can add multiple tests to a single assessment by creating separate sections. This lets you evaluate candidates across different skill sets in one session.
+
+<Steps>
+  <Step title="Navigate to Test Sections">
+    Open the sections area in the assessment builder.
+  </Step>
+  <Step title="Add a section">
+    Click **+ Add Section** and select a published test from the dropdown.
+  </Step>
+  <Step title="Configure questions">
+    Set Questions to Show, Required Questions, and enable Shuffle if needed.
+  </Step>
+  <Step title="Repeat">
+    Click **+ Add Section** again to add more tests to the same assessment.
+  </Step>
+</Steps>
+
+<Tip>
+  Use question shuffling to improve assessment integrity and reduce answer sharing between candidates.
+</Tip>
+
+---
+
+### Instructions
+
+<Frame>
+  <img src="/images/assessments/image50.png" alt="Candidate instructions step" />
+</Frame>
+
+Provide guidance candidates will see before starting the assessment. Example instructions:
+
+- Please read all questions carefully before answering
+- Ensure you have a stable internet connection
+- Do not refresh or close the browser window during the assessment
+- Once submitted, answers cannot be modified
+- Ensure all mandatory questions are answered before submission
+
+---
+
+### Proctoring
+
+<Frame>
+  <img src="/images/assessments/image51.png" alt="Proctoring settings" />
+</Frame>
+
+Enable proctoring controls to ensure a fair and secure assessment experience.
+
+| Feature | Description |
+|---|---|
+| **Fullscreen Mode** | Candidates must remain in fullscreen |
+| **Tab Switching Detection** | Tracks when candidates leave the tab |
+| **Disable Copy/Paste** | Prevents copying/pasting within the assessment |
+| **Single Screen Only** | Prevents use of multiple monitors |
+| **Webcam Monitoring** | Captures live video during the session |
+| **Eye-Gaze Monitoring** | Tracks where candidates are looking |
+| **Auto-submit on Violation** | Automatically submits when a violation is detected |
+
+<Note>
+  Enable only the proctoring features required based on assessment sensitivity. Behavioural analytics such as eye tracking are used as supporting information only.
+</Note>
+
+---
+
+### Publish and Assign Candidates
+
+<Steps>
+  <Step title="Create the assessment">
+    Once all configuration is complete, click **Create Assessment**.
+  </Step>
+  <Step title="Publish">
+    Click **Publish Assessment** to make it available for assignment.
+  </Step>
+  <Step title="Assign candidates">
+    Click **Assign Candidates** and choose how to invite:
+
+    | Option | Description |
+    |---|---|
+    | Invite by Email | Enter candidate emails to send direct invitations |
+    | Select Existing Applicants | Choose candidates already in the system |
+    | Validity Window | Period during which candidates can access the assessment |
+    | Reminder Emails | Automatically notify candidates before the deadline |
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/assessments/image55.png" alt="Assign candidates to assessment" />
+</Frame>
+
+**Best Practices**
+- Review all configurations carefully before publishing
+- Confirm that all sections, questions, and scoring rules are properly set up
+- Use clear and meaningful assessment titles so candidates understand the purpose
+
+---
+
+## Related Articles
+
+- [Assessments Overview](/assessments/overview)
+- [View Assessment Results](/assessments/view-results)

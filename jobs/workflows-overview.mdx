@@ -1,0 +1,104 @@
+---
+title: "Workflows Overview"
+description: "Understand what workflows are and manage them from the Workflows list."
+---
+
+## What is a Workflow?
+
+A workflow is a structured sequence of hiring stages that automatically processes candidates as they apply to a job. Once attached to a job, all applicants enter the configured pipeline and are evaluated and moved through stages based on predefined rules.
+
+**Example pipeline:**
+
+```
+Application Received
+    ↓
+Resume Screening  (AI-scored)
+    ↓
+Aptitude Assessment  (test sent by email)
+    ↓
+Automated Video Interview  (candidate records answers)
+    ↓
+Offer / Reject
+```
+
+<Frame>
+  <img src="/images/workflows/image69.png" alt="Workflows list page" />
+</Frame>
+
+---
+
+## Navigating to Workflows
+
+Click **Workflows** in the left sidebar to open the Workflows list.
+
+---
+
+## Workflows List
+
+<Frame>
+  <img src="/images/workflows/image70.png" alt="Workflow list table" />
+</Frame>
+
+| Column | Description |
+|---|---|
+| **Title** | Name of the workflow (click to open the editor) |
+| **Active Version** | The currently active version (V1, V2, etc.) |
+| **Configured** | Whether all stages in the active version are fully configured |
+| **Created On** | Date and time the workflow was created |
+| **Created By** | User who created the workflow |
+
+### Filter Tabs
+
+| Tab | Shows |
+|---|---|
+| **All** | Every workflow |
+| **Configured** | Only fully configured workflows |
+| **Not Configured** | Workflows with incomplete stages |
+| **Favourites** | Workflows you have starred |
+
+Star any workflow using the bookmark icon on the left of its row to add it to Favourites.
+
+---
+
+## Creating a Workflow
+
+<Steps>
+  <Step title="Go to Workflows">
+    Click **Workflows** in the left sidebar.
+  </Step>
+  <Step title="Click Create Workflow">
+    Click **+ Create Workflow** in the top-right corner.
+  </Step>
+  <Step title="Enter details">
+    Enter a **Name** (required) and an optional **Description** (max 75 characters each).
+    Keep **Redirect to Workflow Setup** enabled to go straight to the editor.
+  </Step>
+  <Step title="Create">
+    Click **Create Workflow**. Version V1 is created and activated automatically.
+  </Step>
+</Steps>
+
+---
+
+## Workflow Actions
+
+Right-click or use the **Action menu (...)** on any workflow row to:
+
+| Action | Description |
+|---|---|
+| **View** | Open the workflow in the editor |
+| **Create a Copy** | Duplicate the workflow as a new workflow |
+| **Delete** | Permanently delete the workflow |
+
+<Warning>
+  A workflow cannot be deleted if it is currently assigned to a job. Unassign it first.
+</Warning>
+
+---
+
+## Related Articles
+
+- [Build a Workflow](/jobs/build-a-workflow)
+- [Assign a Workflow](/jobs/assign-a-workflow)
+- [Workflow Visualizer](/jobs/workflow-visualizer)
+- [Versions and Logs](/jobs/workflow-versions)

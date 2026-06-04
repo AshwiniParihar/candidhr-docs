@@ -1,0 +1,103 @@
+---
+title: "Versions and Logs"
+description: "Manage workflow versions and review the execution history of your workflows."
+---
+
+## Versions
+
+Every workflow supports multiple versions. This lets you refine and improve your pipeline over time without disrupting candidates already in progress on an earlier version.
+
+<Frame>
+  <img src="/images/workflows/image81.png" alt="Workflow versions table" />
+</Frame>
+
+### Versioning Rules
+
+| Rule | Description |
+|---|---|
+| **V1 created automatically** | A V1 version is created and activated when you first create a workflow |
+| **One active version** | Only one version can be active at a time; activating a new version deactivates the current one |
+| **Editing restrictions** | Once candidates are in an active version, that version becomes locked to protect those candidates |
+| **New version required** | To make changes after candidates have entered, create a new version |
+
+---
+
+## Managing Versions
+
+Open the **Versions** tab from the workflow header to see the full version history.
+
+| Column | Description |
+|---|---|
+| **Version** | Version label (V1, V2, etc.) |
+| **Description** | Optional description for this version |
+| **Configured** | Whether all stages are fully configured |
+| **Active** | Whether this is the currently active version |
+| **Created On** | Date and time this version was created |
+
+### Version Actions
+
+From the **action menu (...)** on each version row:
+
+| Action | Description |
+|---|---|
+| **Open** | Opens the version in the editor |
+| **Activate** | Makes this version the active one (affects all future applicants) |
+| **Duplicate** | Creates a new version using this version as the starting point |
+| **Delete** | Permanently removes this version |
+
+<Warning>
+  Activating a new version affects all new applicants going forward. Candidates already in the previous version continue on their existing version.
+</Warning>
+
+---
+
+## Creating a New Version
+
+<Steps>
+  <Step title="Open the Versions tab">
+    In the workflow editor, click the **Versions** tab in the header.
+  </Step>
+  <Step title="Duplicate an existing version">
+    Click the action menu on the version you want to base the new one on and select **Duplicate**.
+  </Step>
+  <Step title="Enter a name and description">
+    Give the new version a name and optional description.
+  </Step>
+  <Step title="Edit and configure">
+    Open the new version in the editor and make your changes.
+  </Step>
+  <Step title="Activate when ready">
+    Once configured, go back to the Versions tab and **Activate** the new version.
+  </Step>
+</Steps>
+
+---
+
+## Logs
+
+The **Logs** tab shows a full audit trail of all actions taken across the workflow.
+
+| Column | Description |
+|---|---|
+| **Summary** | What happened (includes links to the candidate, stage, or user involved) |
+| **Stage** | The workflow stage where the action occurred |
+| **Action By** | The user who triggered the action |
+| **Timestamp** | Date and time of the action |
+
+### Filtering Logs
+
+Use the column filter inputs to narrow down log entries:
+
+- **Stage** — filter by stage name
+- **Action By** — filter by the user who performed the action
+
+Clicking a link in the **Summary** column navigates directly to the related candidate profile or workflow stage.
+
+---
+
+## Related Articles
+
+- [Workflows Overview](/jobs/workflows-overview)
+- [Build a Workflow](/jobs/build-a-workflow)
+- [Assign a Workflow](/jobs/assign-a-workflow)
+- [Workflow Visualizer](/jobs/workflow-visualizer)

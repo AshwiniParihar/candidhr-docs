@@ -3,4 +3,65 @@ title: "Roles & Permissions"
 description: "Control what each team member can see and do in CandidHR."
 ---
 
-<Note>This article is coming soon.</Note>
+## Overview
+
+CandidHR uses a role-based access control system. Every user is assigned a role that determines what they can view, create, and manage within the platform.
+
+<Frame>
+  <img src="/images/settings/image12.png" alt="Roles list page showing Admin, Editor, and Participant" />
+</Frame>
+
+---
+
+## Default Roles
+
+| Role | Access Level | Key Capabilities |
+|---|---|---|
+| **Admin** | Full access | Manage users, assign roles, create jobs, access all settings, manage workflows and reports |
+| **Editor** | Limited admin | Create and manage jobs, access assigned workflows, manage candidates |
+| **Participant** | Restricted | Participate in interviews, review assigned candidates, provide feedback |
+
+<Warning>
+  The first user created during platform onboarding is always assigned the Admin role.
+  Editors and Participants can only access jobs that have been explicitly shared with them. If a job is not shared, it will not be visible in their account.
+</Warning>
+
+---
+
+## Creating Custom Roles
+
+If the default roles don't fit your team's needs, you can create custom roles with specific permissions.
+
+<Frame>
+  <img src="/images/settings/image13.png" alt="Custom role creation form" />
+</Frame>
+
+| Field | Description |
+|---|---|
+| Base Role | Permission foundation — Start from Scratch, Admin, Editor, or Participant |
+| Role Name | Clear, meaningful name (e.g. Senior Recruiter, Technical Interviewer) |
+
+### Steps
+
+1. Navigate to **Profile → Roles**
+2. Click **Add Role**
+3. Select a **Base Role** as the starting permission set
+4. Enter a clear **Role Name**
+5. Click **Save**
+
+<Warning>
+  Improper role configuration may allow unauthorised access to sensitive recruitment data and administrative settings.
+</Warning>
+
+**Best Practices**
+- Follow the principle of minimum required access
+- Use custom roles only when standard roles do not meet operational needs
+- Maintain clear and meaningful role names
+- Regularly review role permissions for security and process control
+
+---
+
+## Related Articles
+
+- [Settings Overview](/settings/overview)
+- [Manage Team Members](/settings/manage-team)
